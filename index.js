@@ -175,6 +175,7 @@ function onClickStartButton() {
 function onClickSubmitButton() {
 // stops autosubmit of results after each submit and checks if answer
 // is right or wrong
+
 $('.container').on('click', ".js-submit", function(event) {
         event.preventDefault()
 
