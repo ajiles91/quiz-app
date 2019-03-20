@@ -107,25 +107,27 @@ var rightAns = [
 
 
 //starts question counter
-let questionNum = 1;
+var questionNum = 1;
 
 // start of amount of right answers for beginning
-let rightAnsCounter = 0;
+var rightAnsCounter = 0;
 
 
 // user stories/breakdown
 
-// 1. create skeleton of question page
+// 1. create skevaron of question page
 // 2. make event listener for the user clicking the start button
 // 3. make event listener for submit button click
 // 4. make event listener for nav buttons (forward and back on questions)
-// 5. let user know when the question is right or wrong
+// 5. var user know when the question is right or wrong
 
 
 
 
 function questionSitePage(rightAnsCounter, q, qAnswered) {
     // generates the form for the question on the click of start quiz, also
+
+    
     return `
     <section id="question-page">
 
@@ -152,10 +154,12 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
                 <input class="answer" type="radio" name="option"></input>
              <span>${q.ans4}</span>
             </label>
+            
         </fieldset>
-        <button class='js-submit">Submit</button>
+        <input type="submit" value="Submit" class='js-submit">
+       
     </form>
-
+    
     <div id="count-and-score">
         <span id ="question-counter"> Question: ${q.number}/10</span>
         <span id = "score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
@@ -167,6 +171,8 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
 
 function onClickStartButton() {
     // runs questionSitePage on start button
+    console.log('sup')
+
     $(".js-start-quiz-button").click(function(event) {
         questionProgression();
       });
@@ -175,12 +181,13 @@ function onClickStartButton() {
 function onClickSubmitButton() {
 // stops autosubmit of results after each submit and checks if answer
 // is right or wrong
+console.log('pp')
 
 $('.container').on('click', ".js-submit", function(event) {
         event.preventDefault()
 
-        let answer = $('input:checked').siblings('span');
-        let userIsRight = checkAnswer(answer);
+        var answer = $('input:checked').siblings('span');
+        var userIsRight = checkAnswer(answer);
         if (userIsRight) {
             givesRightFeedback();
         }
@@ -192,11 +199,13 @@ $('.container').on('click', ".js-submit", function(event) {
 
 
 function onClickNextButton(){
+    console.log('yo')
     //updates the counter for correct answers and sends you to
     //the results page
-    $('.container').on('click', )
+    $('js-next-button').on('click', function(event) {
     addToQuestionCounter();
     questionProgression(); 
+    })
 }
 
 function onClickRestartButton(){
@@ -206,7 +215,7 @@ function onClickRestartButton(){
         questionNum = 1;
     
         rightAnsCounter = 0;
-    
+        console.log('??')
         questionProgression();
     });
 }
@@ -223,8 +232,8 @@ function checkAnswer(){
 function questionProgression() {
     //moves through the questions
 
-    let q = questionsAndAnswers[questionNum - 1];
-    let qAnswered = questionNum - 1;
+    var q = questionsAndAnswers[questionNum - 1];
+    var qAnswered = questionNum - 1;
   
     $(".container").html(questionSitePage(rightAnsCounter, q, qAnswered));
 }
@@ -256,9 +265,9 @@ function givesRightFeedback(){
 function givesWrongFeedback(){
     // generates you're wrong, here's the right answer or something like 
     // that when user submits wrong idea
-    $('.container').html(wrongFeedbackSkeleton(questionNum));
+    $('.container').html(wrongFeedbackSkevaron(questionNum));
 }
-function wrongFeedbackSkeleton(){
+function wrongFeedbackSkevaron(){
     return `
         <section class="feedback"> 
             <h2> Sorry, it was ${rightAns[questionNum - 1]}</h2>
