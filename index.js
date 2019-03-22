@@ -87,7 +87,7 @@ var questionsAndAnswers = [
         question: 'How many songs are in Hamilton the Musical?',
         ans1: '12',
         ans2: '21' ,
-        ans3: '4' ,
+        ans3: '46' ,
         ans4: '34'
     }
 ]
@@ -161,7 +161,7 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
         <label>
         <div class="count-and-score">
             <span class ="question-counter"> Question: ${q.number}/10</span>
-            <span class="score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
+            <span id="score-count">Score: ${rightAnsCounter}/${qAnswered}</span>
         </div>
         </label>
    
