@@ -1,17 +1,42 @@
 html {
-    background: url (' https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/HAM_LOGO_02.svg')
+    background-color: #BF800F;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 body * {
 	box-sizing: border-box;
-	/* font-family: ; */
+	/* font-family: ; Arial */
 
 }
+
+.hamilton-star-logo {
+    width: 400px;
+}
+
 html, body {
 	height: 100%;
 }
 
+.container {
+    height: 100%;
+}
+
 h1 {
 	font-size: 3em;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+h1, h2 {
+	color: #0c2735;
+	background-color: rgba(255, 255, 255, .4);
+	text-align: center;
 }
 
 h2 {
@@ -23,6 +48,24 @@ h2 {
 	flex-direction: column;
 	align-items: center;
     justify-content: space-between;
+}
+
+.answer {
+	width: 1.1em;
+	height: 1.1em;
+	vertical-align: middle;
+}
+
+.count-and-score {
+    background-color: rgba(255, 255, 255, .4);
+  }
+
+.question-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/*background-color: rgba(255, 255, 255, .4);*/
 }
 
 button {
@@ -43,4 +86,134 @@ button {
 button:hover {
 	background-color: #0083B7;
 	cursor: pointer;
+}
+
+.hamilton-silo-logo {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: -2px;
+}
+
+.question {
+	margin: 0;
+	background-color: rgba(255, 255, 255, .8);
+}
+form {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 10%;
+	min-height: 500px;
+	border: none;
+}
+
+.answer {
+	width: 1.1em;
+	height: 1.1em;
+	vertical-align: middle;
+}
+
+label {
+	margin-bottom: 1em;
+	font-size: 1.5em;
+}
+
+.js-submit {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+.question-counter, .score-counter {
+	display: inline-block;
+	font-size: 1.6em;
+}
+
+.score-counter {
+	float: right;
+}
+
+.feedback {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.js-next-button {
+	margin: 1em auto;
+}
+
+.js-restart {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 10em;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 360px) {
+	.question-counter, .score-counter {
+		display: inline-block;
+		font-size: 1.8em;
+		margin: 0 .6em .6em;
+	}
+
+	.score-counter {
+		float: right;
+	}	
+
+	h2 {
+	font-size: 2em;
+	margin-top: 3em;
+	}
+
+	label {
+		margin-bottom: 2em;
+	}
+}
+
+@media only screen and (min-width: 650px) {
+	.feedback-page img {
+		display: block;
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.feedback h2 {
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+	form {
+		padding: 4em 7em 0;
+	}
+
+	.question-counter {
+		padding-left: 8em;
+		padding-bottom: 2.5em;
+	}
+
+	.score-counter {
+		padding-right: 8em;
+		padding-bottom: 2.5em;
+	}
+}
+@media (max-width: 767px) {
+    .hamilton-star-logo {
+    width: 400px;
+}
 }
