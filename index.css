@@ -11,7 +11,7 @@ body * {
 
 }
 
-.hamilton-star-logo {
+.logo {
     width: 400px;
 }
 
@@ -88,7 +88,7 @@ button:hover {
 	cursor: pointer;
 }
 
-.hamilton-silo-logo {
+.silo {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -213,7 +213,7 @@ label {
 	}
 }
 @media (max-width: 767px) {
-    .hamilton-star-logo {
+    .logo {
     width: 400px;
 }
 }
