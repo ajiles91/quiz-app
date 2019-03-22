@@ -131,39 +131,40 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
     return `
     <section id="question-page">
 
-    <h2>${q.question}</h2>
+        <h2 class="question">${q.question}</h2>
 
-    <form>
-        <fieldset>
-            <label>
-                <input class = "answers" type = "radio" name="option" checked></input>
-                <span>${q.ans1}</span>
-            </label>
+        <form>
+            <fieldset>
+                <label>
+                    <input class = "answers" type = "radio" name="option" checked></input>
+                    <span>${q.ans1}</span>
+                </label>
 
-            <label>
-                <input class="answer" type="radio" name="option"></input>
-                <span>${q.ans2}</span>
-            </label>
-    
-            <label>
-                <input class="answer" type="radio" name="option"></input>
-                <span>${q.ans3}</span>
-            </label>
-    
-            <label>
-                <input class="answer" type="radio" name="option"></input>
-             <span>${q.ans4}</span>
-            </label>
-            
-        </fieldset>
-        <input type="submit" value="Submit" class='js-submit">
-       
-    </form>
-    
-    <div id="count-and-score">
-        <span id ="question-counter"> Question: ${q.number}/10</span>
-        <span id = "score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
-    </div>
+                <label>
+                    <input class="answer" type="radio" name="option"></input>
+                    <span>${q.ans2}</span>
+                </label>
+        
+                <label>
+                    <input class="answer" type="radio" name="option"></input>
+                    <span>${q.ans3}</span>
+                </label>
+        
+                <label>
+                    <input class="answer" type="radio" name="option"></input>
+                <span>${q.ans4}</span>
+                </label>
+                
+            </fieldset>
+            <input type="submit" value="Submit" class='js-submit">
+        
+        </form>
+
+        <div id="count-and-score">
+            <span id ="question-counter"> Question: ${q.number}/10</span>
+            <span id = "score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
+        </div>
+   
 
     </section>
     `;    
