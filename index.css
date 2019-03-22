@@ -220,7 +220,10 @@ label {
 	}
 }
 @media (max-width: 767px) {
-    .logo {
+    .star-logo {
     width: 400px;
+}
+.silo-logo {
+    width:400px;
 }
 }
