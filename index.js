@@ -130,7 +130,6 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
     
     return `
     <section id="question-page">
-
         <h2 class="question">${q.question}</h2>
 
         <form>
@@ -154,16 +153,18 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
                     <input class="answer" type="radio" name="option"></input>
                 <span>${q.ans4}</span>
                 </label>
-                
             </fieldset>
-            <input type="submit" value="Submit" class='js-submit">
+             <label>   
+            <input type="submit" value="Submit" class="js-submit">
+            </label>
         
         </form>
-
+        <label>
         <div id="count-and-score">
             <span id ="question-counter"> Question: ${q.number}/10</span>
             <span id = "score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
         </div>
+        </label>
    
 
     </section>
