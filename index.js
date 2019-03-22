@@ -159,9 +159,9 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
         
         </form>
         <label>
-        <div id="count-and-score">
-            <span id ="question-counter"> Question: ${q.number}/10</span>
-            <span id = "score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
+        <div class="count-and-score">
+            <span class ="question-counter"> Question: ${q.number}/10</span>
+            <span class="score-counter>Score: ${rightAnsCounter}/${qAnswered}</span>
         </div>
         </label>
    
@@ -221,9 +221,9 @@ function onClickRestartButton(){
     });
 }
 
-function checkAnswer(){
+function checkAnswer(answer){
     //compares user answer to actual answers returns true or false
-    if (useranser === rightAns[questionNum - 1] ) {
+    if (answer.text() === rightAns[questionNum - 1] ) {
         return true;
         }
     else {
@@ -249,13 +249,6 @@ function addToRightAnswerCounter(){
     rightAnsCounter++;
 }
 
-var rightFeedback = `<section class='feedback'>
-<h2> You got it!</h2>
-<button class="js-next-button">On to the next!</button>
-</section>
-`;
-
-
 function givesRightFeedback(){
     //generates you got it! or something like that when user 
     // submits correct answer to the question
@@ -263,12 +256,20 @@ function givesRightFeedback(){
     addToRightAnswerCounter();
 }
 
+var rightFeedback = `<section class='feedback'>
+<h2> You got it!</h2>
+<button class="js-next-button">On to the next!</button>
+</section>
+`;
+
+
+
 function givesWrongFeedback(){
     // generates you're wrong, here's the right answer or something like 
     // that when user submits wrong idea
-    $('.container').html(wrongFeedbackSkevaron(questionNum));
+    $('.container').html(wrongFeedbackSkeleton(questionNum));
 }
-function wrongFeedbackSkevaron(){
+function wrongFeedbackSkeleton(){
     return `
         <section class="feedback"> 
             <h2> Sorry, it was ${rightAns[questionNum - 1]}</h2>
@@ -291,9 +292,8 @@ function forAllTheButtons() {
     // ready for clicks
 
     onClickStartButton();
-    onClickRestartButton();
+    onClickSubmitButton();
     onClickNextButton();
-    onClickSubmitButton()
-
+    onClickRestartButton();
 }
 forAllTheButtons();
