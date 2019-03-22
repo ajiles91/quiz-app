@@ -129,13 +129,13 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
 
     
     return `
-    <section id="question-page">
+    <section class="question-page">
         <h2 class="question">${q.question}</h2>
 
         <form>
             <fieldset>
                 <label>
-                    <input class = "answers" type = "radio" name="option" checked></input>
+                    <input class = "answer" type = "radio" name="option" checked></input>
                     <span>${q.ans1}</span>
                 </label>
 
@@ -176,7 +176,7 @@ function onClickStartButton() {
 
     $(".js-start-quiz-button").click(function(event) {
         questionProgression();
-      });
+    });
 }
 
 function onClickSubmitButton() {
@@ -203,10 +203,15 @@ function onClickNextButton(){
     console.log('yo')
     //updates the counter for correct answers and sends you to
     //the results page
-    $('js-next-button').on('click', function(event) {
-    addToQuestionCounter();
-    questionProgression(); 
-    })
+    $('.container').on('click', '.js-next-button', function(event) {
+        if(questionNum === 10) {
+            resultsPage(rightAnsCounter);
+        }
+        else {
+            addToQuestionCounter();
+            questionProgression(); 
+        }
+    });
 }
 
 function onClickRestartButton(){
@@ -267,9 +272,9 @@ var rightFeedback = `<section class='feedback'>
 function givesWrongFeedback(){
     // generates you're wrong, here's the right answer or something like 
     // that when user submits wrong idea
-    $('.container').html(wrongFeedbackSkeleton(questionNum));
+    $('.container').html(wrongFeedbackTemplate(questionNum));
 }
-function wrongFeedbackSkeleton(){
+function wrongFeedbackTemplate(){
     return `
         <section class="feedback"> 
             <h2> Sorry, it was ${rightAns[questionNum - 1]}</h2>
