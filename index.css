@@ -1,3 +1,13 @@
+body * {
+	box-sizing: border-box;
+	/* font-family: ; Arial */
+
+}
+
+html, body {
+	height: 100%;
+}
+
 html {
     background-color: #BF800F;
     /* -webkit-background-size: cover;
@@ -6,11 +16,7 @@ html {
   background-size: cover; */
 }
 
-body * {
-	box-sizing: border-box;
-	/* font-family: ; Arial */
 
-}
 
 .logo {
     width: 400px;
@@ -29,7 +35,7 @@ h1 {
 }
 
 img {
-    /* max-width: 100%; */
+    max-width: 100%;
     vertical-align: middle;
     display: inline-block;
 }
@@ -76,7 +82,7 @@ button {
 	margin-bottom: 1.5em;
 	font-size: 2em;
 	border: none;
-	background-color: #EB00BB;
+	background-color: #FFB415;
 	color: #ffedfc;
 	border-radius: 5px;
 	padding: .5em 1em;
@@ -85,11 +91,11 @@ button {
 }
 
 button:hover {
-	background-color: #0083B7;
+	background-color: #402B05;
 	cursor: pointer;
 }
 
-.silo {
+.silo-logo {
     position: absolute;
     left: 0px;
     right: 0px;
