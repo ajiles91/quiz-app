@@ -158,9 +158,7 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
                 <span>${q.ans4}</span>
                 </label>
             </fieldset>
-           
             <button class="js-submit">Submit</button>
-        
         </form>
 
         <div class="image-wrapper">

@@ -125,7 +125,7 @@ fieldset {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 0 10%;
-	min-height: 500px;
+	/* min-height: 500px; */
 	border: none;
 }
 
