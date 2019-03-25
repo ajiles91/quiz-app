@@ -176,7 +176,7 @@ label {
 
 .image-wrapper{
     position: relative;
-    /* height: 500px; */
+    height: 100px; 
 }
 
 /*media queries*/
