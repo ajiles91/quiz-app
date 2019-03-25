@@ -165,6 +165,7 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
         <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
         alt="hamilton-silhouette-logo"/>
         </div>
+        
 
         <div class="count-and-score">
             <span class ="question-counter"> Question: ${q.num}/10</span>
@@ -177,6 +178,8 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
 
 function onClickStartButton() {
     // runs questionSitePage on start button
+    //test
+    
     console.log('sup')
 
     $(".js-start-quiz-button").click(function(event) {
