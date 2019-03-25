@@ -18,8 +18,14 @@ html {
 
 
 
-.logo {
+.star-logo {
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
 }
 
 html, body {
@@ -101,6 +107,9 @@ button:hover {
     right: 0px;
     bottom: 0px;
     margin-bottom: -2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .question {
@@ -194,7 +203,11 @@ label {
 		width: 650px;
 		margin-left: auto;
 		margin-right: auto;
-	}
+    }
+    .silo-logo {
+        margin-left:auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -222,8 +235,19 @@ label {
 @media (max-width: 767px) {
     .star-logo {
     width: 400px;
+    align-items: flex-end;
 }
-.silo-logo {
-    width:400px;
+    .silo-logo {
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin-bottom: -2px;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
 }
 }
