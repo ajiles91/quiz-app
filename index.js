@@ -12,7 +12,7 @@ var questionsAndAnswers = [
 
     {
         num: 2,
-        question: 'What year did Hamilton the musical go to Broadway',
+        question: 'What year did Hamilton the musical go to Broadway?',
         ans1: ' 2016',
         ans2: '2018 ' ,
         ans3: '2017' ,
@@ -126,9 +126,13 @@ var rightAnsCounter = 0;
 
 function questionSitePage(rightAnsCounter, q, qAnswered) {
     // generates the form for the question on the click of start quiz, also
-
+    console.log(q)
     
     return `
+
+    <img class= "star-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/HAM_LOGO_02.svg" 
+    alt ="hamilton-star-logo" />
+
     <section class="question-page">
         <h2 class="question">${q.question}</h2>
 
@@ -160,11 +164,13 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
         </form>
         <label>
         <div class="count-and-score">
-            <span class ="question-counter"> Question: ${q.number}/10</span> <br>
+            <span class ="question-counter"> Question: ${q.num}/10</span> <br>
             <span class="score-counter">Score: ${rightAnsCounter}/${qAnswered}</span>
         </div>
-        </label>
-   
+
+        <img class="silo-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+        alt="hamilton-silo-logo"/>
+        <label>
 
     </section>
     `;    
