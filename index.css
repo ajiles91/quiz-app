@@ -210,6 +210,19 @@ label {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .silo-logo {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin-bottom: -2px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
 @media only screen and (min-width: 1000px) {
 	.feedback h2 {
 		width: 650px;

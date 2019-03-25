@@ -162,7 +162,6 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
             <button class="js-submit">Submit</button>
         
         </form>
-        <label>
         <div class="count-and-score">
             <span class ="question-counter"> Question: ${q.num}/10</span>
             <span class="score-counter">Score: ${rightAnsCounter}/${qAnswered}</span>
@@ -170,7 +169,6 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
 
         <img class="silo-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
         alt="hamilton-silo-logo"/>
-        <label>
 
     </section>
     `;    
