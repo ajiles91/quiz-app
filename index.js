@@ -178,8 +178,8 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
 
 function onClickStartButton() {
     // runs questionSitePage on start button
-    //test
-    
+    //test 2
+
     console.log('sup')
 
     $(".js-start-quiz-button").click(function(event) {
