@@ -164,7 +164,7 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
         </form>
         <label>
         <div class="count-and-score">
-            <span class ="question-counter"> Question: ${q.num}/10</span> <br>
+            <span class ="question-counter"> Question: ${q.num}/10</span>
             <span class="score-counter">Score: ${rightAnsCounter}/${qAnswered}</span>
         </div>
 
