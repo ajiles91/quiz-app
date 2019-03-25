@@ -266,9 +266,19 @@ function givesRightFeedback(){
     addToRightAnswerCounter();
 }
 
-var rightFeedback = `<section class='feedback' role="main">
-<h2> You got it!</h2>
-<button class="js-next-button">On to the next!</button>
+var rightFeedback = `
+<section class='feedback' role="main">
+    <img class= "star-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/HAM_LOGO_02.svg" 
+    alt ="hamilton-star-logo" />
+
+    <h2> You got it!</h2>
+    <button class="js-next-button">On to the next!</button>
+
+    <div class="image-wrapper">
+        <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+        alt="hamilton-silhouette-logo"/>
+    </div>
+
 </section>
 `;
 
@@ -282,8 +292,17 @@ function givesWrongFeedback(){
 function wrongFeedbackTemplate(){
     return `
         <section class="feedback" role="main"> 
+            <img class= "star-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/HAM_LOGO_02.svg" 
+            alt ="hamilton-star-logo" />
+
             <h2> Sorry, it was ${rightAns[questionNum - 1]}.</h2>
             <button class="js-next-button">On to the next!</button>
+
+            <div class="image-wrapper">
+                <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+                alt="hamilton-silhouette-logo"/>
+            </div>
+
         </section>
     `;
 }
@@ -291,9 +310,18 @@ function wrongFeedbackTemplate(){
 function resultsPage(){
     //creates results page at the end of quiz
     $('.container').html(`
-    <section class="results-page">
-      <h2>Final Score: ${rightAnsCounter} out of 10</h2>
-      <button class="js-restart">One More Time?</button>
+    <section class="results-page" role="main">
+        <img class= "star-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/HAM_LOGO_02.svg" 
+        alt ="hamilton-star-logo" />
+        
+        <h2>Final Score: ${rightAnsCounter} out of 10</h2>
+        <button class="js-restart">One More Time?</button>
+
+        <div class="image-wrapper">
+            <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+             alt="hamilton-silhouette-logo"/>
+        </div>
+
     </section>
   `);
 }
