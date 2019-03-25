@@ -167,8 +167,10 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
             <span class="score-counter">Score: ${rightAnsCounter}/${qAnswered}</span>
         </div>
 
+        <div class="image-wrapper">
         <img class="silo-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
         alt="hamilton-silo-logo"/>
+        </div>
 
     </section>
     `;    
@@ -281,7 +283,7 @@ function givesWrongFeedback(){
 function wrongFeedbackTemplate(){
     return `
         <section class="feedback"> 
-            <h2> Sorry, it was ${rightAns[questionNum - 1]}</h2>
+            <h2> Sorry, it was ${rightAns[questionNum - 1]}.</h2>
             <button class="js-next-button">On to the next!</button>
         </section>
     `;
