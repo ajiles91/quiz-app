@@ -160,10 +160,10 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
             </fieldset>
             <button class="js-submit">Submit</button>
         </form>
-
+        <div class="bumper"></div>
         <div class="image-wrapper">
         <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
-        alt="hamilton-silhouette-logo"/>
+        width="1425px" height="200px" alt="hamilton-silhouette-logo"/>
         </div>
         
 
@@ -276,10 +276,11 @@ var rightFeedback = `
 
     <h2> You got it!</h2>
     <button class="js-next-button">On to the next!</button>
-
+    <br>
+    <br>
     <div class="image-wrapper">
-        <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
-        alt="hamilton-silhouette-logo"/>
+    <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+    width="1425px" height="160px" alt="hamilton-silhouette-logo"/>
     </div>
 
 </section>
@@ -300,10 +301,11 @@ function wrongFeedbackTemplate(){
 
             <h2> Sorry, it was ${rightAns[questionNum - 1]}.</h2>
             <button class="js-next-button">On to the next!</button>
-
+            <br>
+            <br>
             <div class="image-wrapper">
-                <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
-                alt="hamilton-silhouette-logo"/>
+            <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+            width="1425px" height="160px" alt="hamilton-silhouette-logo"/>
             </div>
 
         </section>
@@ -321,8 +323,8 @@ function resultsPage(){
         <button class="js-restart">One More Time?</button>
 
         <div class="image-wrapper">
-            <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
-             alt="hamilton-silhouette-logo"/>
+        <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
+        width="1425px" height="200px" alt="hamilton-silhouette-logo"/>
         </div>
 
     </section>
