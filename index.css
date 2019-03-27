@@ -39,6 +39,10 @@ html, body {
 h1 {
 	font-size: 3em;
 }
+.bumper {
+	height: 100px;
+
+}
 
 img {
     max-width: 100%;
@@ -70,7 +74,8 @@ h2 {
 }
 
 .count-and-score {
-    background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(255, 255, 255, .4);
+	height: 150px;
   }
 
 .question-page {
@@ -109,7 +114,9 @@ button:hover {
     margin-bottom: -2px;
     width: 100%;
     display: flex;
-    justify-content: center;
+	justify-content: center;
+	margin-top:10px;
+	
 }
 
 .question {
@@ -176,7 +183,8 @@ label {
 
 .image-wrapper{
     position: relative;
-    height: 100px; 
+	height: 100px;
+	padding-top:20px;
 }
 
 /*media queries*/
