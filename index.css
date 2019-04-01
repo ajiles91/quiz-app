@@ -40,7 +40,7 @@ h1 {
 	font-size: 3em;
 }
 .bumper {
-	height: 100px;
+	height: auto;
 
 }
 
@@ -184,7 +184,7 @@ label {
 .image-wrapper{
     position: relative;
 	height: 100px;
-	padding-top:20px;
+	padding-top: 20px;
 }
 
 /*media queries*/
@@ -219,7 +219,8 @@ label {
     }
     .silhouette-logo {
         margin-left:auto;
-        margin-right: auto;
+		margin-right: auto;
+		height: 100%;
     }
 }
 
@@ -230,7 +231,8 @@ label {
         right: 0px;
         bottom: 0px;
         margin-bottom: -2px;
-        width: 100%;
+		width: 100%;
+		height: auto;
         display: flex;
         justify-content: center;
     }
@@ -272,7 +274,8 @@ label {
     right: 0px;
     bottom: 0px;
     margin-bottom: -2px;
-    width: 100%;
+	width: 100%;
+	height: auto;
     /* display: flex;
     justify-content: center; */
 }

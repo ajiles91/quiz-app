@@ -277,7 +277,6 @@ var rightFeedback = `
     <h2> You got it!</h2>
     <button class="js-next-button">On to the next!</button>
     <br>
-    <br>
     <div class="image-wrapper">
     <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
     width="1425px" height="160px" alt="hamilton-silhouette-logo"/>
@@ -288,10 +287,12 @@ var rightFeedback = `
 
 
 
+
 function givesWrongFeedback(){
     // generates you're wrong, here's the right answer or something like 
     // that when user submits wrong idea
     $('.container').html(wrongFeedbackTemplate(questionNum));
+
 }
 function wrongFeedbackTemplate(){
     return `
@@ -301,7 +302,6 @@ function wrongFeedbackTemplate(){
 
             <h2> Sorry, it was ${rightAns[questionNum - 1]}.</h2>
             <button class="js-next-button">On to the next!</button>
-            <br>
             <br>
             <div class="image-wrapper">
             <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
