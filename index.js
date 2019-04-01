@@ -126,6 +126,7 @@ var rightAnsCounter = 0;
 
 function questionSitePage(rightAnsCounter, q, qAnswered) {
     // generates the form for the question on the click of start quiz, also
+    //test
     console.log(q)
     
     return `
