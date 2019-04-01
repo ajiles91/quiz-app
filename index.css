@@ -184,7 +184,7 @@ label {
 .image-wrapper{
     position: relative;
 	height: 100px;
-	padding-top: 20px;
+	padding-top: 0px;
 }
 
 /*media queries*/
