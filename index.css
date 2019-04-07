@@ -4,9 +4,6 @@ body * {
 
 }
 
-html, body {
-	height: 100%;
-}
 
 html {
     background-color: #BF800F;
@@ -28,13 +25,8 @@ html {
 
 }
 
-html, body {
-	height: 100%;
-}
 
-.container {
-    height: 100%;
-}
+
 
 h1 {
 	font-size: 3em;
@@ -60,7 +52,7 @@ h2 {
 	font-size: 1.8em;
 }
 .start-page {
-	height: 100%;
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -79,7 +71,7 @@ h2 {
   }
 
 .question-page {
-	height: 100%;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -113,7 +105,8 @@ button:hover {
     bottom: 0px;
     margin-bottom: -2px;
     width: 100%;
-    display: flex;
+	display: flex;
+	height: 100px;
 	justify-content: center;
 	margin-top:10px;
 	
@@ -133,6 +126,7 @@ fieldset {
 	justify-content: space-between;
 	padding: 0 10%;
 	border: none;
+	margin-top: 20px;
 }
 
 .answer {
@@ -220,7 +214,7 @@ label {
     .silhouette-logo {
         margin-left:auto;
 		margin-right: auto;
-		height: 100%;
+		
     }
 }
 
@@ -252,12 +246,11 @@ label {
 
 	.question-counter {
 		padding-left: 8em;
-		padding-bottom: 2.5em;
+	
 	}
 
 	.score-counter {
 		padding-right: 8em;
-		padding-bottom: 2.5em;
 	}
 }
 @media (max-width: 767px) {

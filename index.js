@@ -172,7 +172,7 @@ function questionSitePage(rightAnsCounter, q, qAnswered) {
         <div class="bumper"></div>
         <div class="image-wrapper">
         <img class="silhouette-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/home-silo.svg"
-        width="1425px" height="200px" alt="hamilton-silhouette-logo"/>
+        alt="hamilton-silhouette-logo"/>
         </div>
         
 
