@@ -272,7 +272,7 @@ function givesRightFeedback(){
     $('.container').html(rightFeedback);
     addToRightAnswerCounter();
 }
-
+//test
 var rightFeedback = `
 <section class='feedback' role="main">
     <img class= "star-logo" src="https://1z1pdp2cr5ea30i3a81fh4af-wpengine.netdna-ssl.com/wp-content/themes/hamilton-theme/img/HAM_LOGO_02.svg" 
